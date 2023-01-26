@@ -18,8 +18,10 @@ tickAmount: 7
 },
 xAxis: {
 tickAmount: 6,
-type: 'linear',
-minorTickInterval: 'auto',
+type: 'logarithmic',
+minTickInterval: 0.01,
+max: 1000,
+allowDecimals: 'true',
 },
 plotOptions: {
 series: {
@@ -104,7 +106,7 @@ data: [[0.02,70],[0.15,70],[0.15,90],[0.02,90]],
 color: Highcharts.Color(Highcharts.getOptions().colors[12]).setOpacity(0.5).get() 
 },{
 name: 'Plot Point', //Data pulls into this Array
-data: [{x:0.9,y:70},{x:0.2,y:120},{x:0.001,y:120},{x:0.1, y:90},{x:0.15,y:77},{x:13,y:120}],
+data: [{x:0.01,y:60},{x:0.2,y:120},{x:1,y:120},{x:0.1, y:90},{x:0.15,y:77},{x:13,y:120}],
 }], 
 responsive: {
 rules: [{
