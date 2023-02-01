@@ -2,7 +2,7 @@
 document.addEventListener("DOMContentLoaded", function() {
 Highcharts.chart('container', {
 title: {
-text: 'ScatterPlot',
+text: 'NRS048-2:2015 Scatterplot',
 align: 'center'
 },
 chart:{
